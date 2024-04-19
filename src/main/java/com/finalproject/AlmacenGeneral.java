@@ -86,10 +86,10 @@ public class AlmacenGeneral extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
-        AppInicio home = new AppInicio();
-        home.setLocationRelativeTo(null);
-        home.setResizable(false);
-        home.setVisible(true);
+        Almacen almacen = new Almacen();
+        almacen.setLocationRelativeTo(null);
+        almacen.setResizable(false);
+        almacen.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnHomeActionPerformed
 

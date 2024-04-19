@@ -38,8 +38,8 @@ public class Log extends javax.swing.JFrame {
         btnSeePass = new javax.swing.JCheckBox();
         txtPass = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         btnAccess = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,16 +82,12 @@ public class Log extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Fira Sans", 0, 18)); // NOI18N
         jLabel3.setIcon(new javax.swing.ImageIcon("/home/darlyn/NetBeansProjects/finalProject/src/main/java/com/assets/WhatsApp Image 2024-04-05 at 18.48.54.jpeg")); // NOI18N
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 10, 80, 90));
-
-        jLabel4.setFont(new java.awt.Font("Fira Sans", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("DDA");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 60, 50));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 80, 90));
 
         btnAccess.setBackground(new java.awt.Color(0, 51, 51));
         btnAccess.setFont(new java.awt.Font("Fira Sans", 1, 24)); // NOI18N
         btnAccess.setForeground(new java.awt.Color(255, 255, 255));
+        btnAccess.setIcon(new javax.swing.ImageIcon("/home/darlyn/NetBeansProjects/finalProject/src/main/java/com/assets/Add_16x16.png")); // NOI18N
         btnAccess.setText("ACCEDER");
         btnAccess.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnAccess.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +95,12 @@ public class Log extends javax.swing.JFrame {
                 btnAccessActionPerformed(evt);
             }
         });
-        jPanel1.add(btnAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 330, 190, 50));
+        jPanel1.add(btnAccess, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 330, 190, 50));
+
+        jLabel4.setFont(new java.awt.Font("Fira Sans", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("INICIAR SESION");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, 140, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

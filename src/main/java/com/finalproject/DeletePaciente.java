@@ -39,6 +39,7 @@ public class DeletePaciente extends javax.swing.JFrame {
         dataTable = new javax.swing.JTable();
         txtCedula = new javax.swing.JTextField();
         btnDelete = new javax.swing.JButton();
+        btnHome = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,7 +71,7 @@ public class DeletePaciente extends javax.swing.JFrame {
         txtCedula.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(txtCedula, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 140, 40));
 
-        btnDelete.setBackground(new java.awt.Color(0, 102, 102));
+        btnDelete.setBackground(new java.awt.Color(0, 153, 204));
         btnDelete.setText("ELIMINAR PACIENTE");
         btnDelete.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -79,6 +80,14 @@ public class DeletePaciente extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, 190, 70));
+
+        btnHome.setText("INICIO");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomeActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnHome, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 340, -1, 50));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -117,6 +126,14 @@ public class DeletePaciente extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnDeleteActionPerformed
 
+    private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
+        AppInicio home = new AppInicio();
+        home.setResizable(false);
+        home.setLocationRelativeTo(null);
+        home.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnHomeActionPerformed
+
 
         private void mostrarDatos(){
         DefaultTableModel modelo = new DefaultTableModel();
@@ -154,6 +171,7 @@ public class DeletePaciente extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnHome;
     private javax.swing.JTable dataTable;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;

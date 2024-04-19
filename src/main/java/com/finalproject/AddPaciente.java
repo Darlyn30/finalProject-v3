@@ -128,6 +128,7 @@ public class AddPaciente extends javax.swing.JFrame {
         String consultaSQL = "INSERT INTO pacientes values (?,?,?,?)";
         if(conexion != null){
             try {
+
                 PreparedStatement consulta = conexion.prepareStatement(consultaSQL);
                 consulta.setString(1, txtCedula.getText());
                 consulta.setString(2, txtName.getText());

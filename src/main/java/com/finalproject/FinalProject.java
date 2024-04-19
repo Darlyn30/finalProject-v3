@@ -15,7 +15,5 @@ public class FinalProject {
         log.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         log.setLocationRelativeTo(null);
         log.setVisible(true);
-
-        
     }
 }

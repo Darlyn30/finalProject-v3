@@ -84,10 +84,10 @@ public class AlmacenAntibioticos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
-        AppInicio home = new AppInicio();
-        home.setResizable(false);
-        home.setLocationRelativeTo(null);
-        home.setVisible(true);
+        Almacen almacen = new Almacen();
+        almacen.setResizable(false);
+        almacen.setLocationRelativeTo(null);
+        almacen.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnHomeActionPerformed
 
